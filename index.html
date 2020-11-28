@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      width: 100%;
+      font-size: 16px;
+      font-family: 'Rubik', sans-serif;
+     
+      background: url(/images/Path\ 1.svg) no-repeat -273px -85px, 
+                  url(/images/path\ 3.svg) no-repeat 1250px 85px, hsl(270, 20%, 96%);
+
+    }
+
+    .container {
+      width: 65%;
+      margin: 100px auto 100px auto;
+      position: relative;
+      display: flex;
+    }
+
+    .phone {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 1.5em;
+      background-color: hsl(270, 20%, 96%);
+      border: 10px solid white;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px -41px 0px -30px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, -1px -41px 0px -30px rgba(0,0,0,0);
+    }
+
+    .profile {
+      background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+      width: 320px;
+      border-radius: 1.5em 1.5em .3em .3em;
+      position: relative;
+    }
+.notch {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  display: block;
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 0 0 1em 1em;
+}
+
+.pic {
+  width: 25px;
+  border-radius: 2em;
+  border: 1px solid white;
+  position: relative;
+  bottom: 3px;
+}
+
+
+.topicon {
+  position: relative;
+  bottom: 8px;
+  display: inline-block;
+  margin: 0 0px 0 20px;
+}
+
+.bar1 {
+  width: 7px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 6px;
+  opacity: .8;
+  -webkit-transform: rotate(-55deg) translate(-2.5px, -1px);
+  transform: rotate(-55deg) translate(-2.5px -1px);
+}
+  .bar2 {
+    width: 7px;
+  height: 3px;
+  background-color: white;
+  opacity: .8;
+  -webkit-transform: rotate(55deg) translate(-4px, 0px);
+  transform: rotate(55deg) translate(-4px 0px);
+  }
+
+  .name {
+    display: inline-block;
+    width: 40%;
+    margin: 0 0 10px 10px;
+    line-height: .8;
+    position: relative;
+    bottom: 5px;
+    color: white;
+    opacity: .8;
+  }
+  .ava {
+    font-size: 10px;
+    opacity: .6;
+  }
+
+  .dots {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 7px 0;
+    left: 95px;
+  }
+
+  #dot1, #dot2, #dot3 {
+    width: 3px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: white;
+    border-radius: 1em;
+    opacity: .8;
+  } 
+
+  .mainbox2 {
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  div[id^="chat"] {
+    font-size: 13px;
+  }
+
+  #chat1, #chat2 {
+    background-color: hsl(294, 26%, 93%);
+    border-radius: .5em;
+    color: hsl(276, 55%, 52%);
+  }
+
+  #chat1 > p, #chat2 > p, #chat6 > p, #chat7 > p, #chat8 > p {
+    padding: 8px;
+  } 
+
+  .mainbox3 {
+    width: 200px;
+    align-self: flex-end;
+    margin-top: 8px;
+    margin-right: 10px;
+
+  }
+
+  img[src^="/images/dog"] {
+    width: 50px;
+    border-radius: .5em;
+    margin: 0 5px 0 8px;
+    position: relative;
+    left: 9px;
+  }
+
+  #chat4, #chat5 {
+    background-color:white;
+    border-radius: .5em;
+    color: hsl(271, 15%, 43%);
+    
+  }
+
+  #Chat4 {
+    width: 200px;
+  }
+  #chat5 {
+    width: 160px;
+    text-align: end;
+    margin-left: 40px;
+  }
+
+  #chat4 > p {
+    padding: 8px;
+  }
+  #chat5 > p {
+    padding: 8px;
+  }
+
+  .mainbox4 {
+    width: 230px;
+    margin: 0 10px;
+  }
+
+  #chat6 {
+    width: 200px;
+    background-color: hsl(294, 26%, 93%);
+    border-radius: .5em;
+    color: hsl(276, 55%, 52%);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #chat6 > p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  #chat7 {
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: .7em .7em .7em .2em;
+    position: relative;
+    color: white;
+    
+  }
+
+  .rad {
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 1em;
+    display: inline-block;
+    border: .8px solid white;
+    margin: 12px 5px 10px 5px;
+  }
+    #chat7 > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    opacity: .7;
+  }
+
+  #chat8 {
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: .7em .7em .7em .2em;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  #chat8 > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    color: white;
+    opacity: .7;
+  }
+
+  .price {
+    margin-left: 60px;
+    font-weight: bold;
+  }
+  .pric {
+    margin-left: 85px;
+    font-weight: bold;
+  }
+
+.mainbox5 {
+    width: 300px;
+    margin: 0 10px 15px 10px;
+    background-color: white;
+    border-radius: 2em;
+    position: relative;
+}
+
+.mainbox5 > p {
+margin: 0;
+padding: 10px 5px 10px 15px;
+display: inline-block;
+color: hsl(206, 6%, 79%);
+}
+
+.bottomicon {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 1em;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  left: 120px;
+
+}
+
+.bar3, .bar4 {
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  margin: 3px 0;
+  position: relative;
+  top: 6px;
+  left: 7px;
+}
+
+.bar3 {
+  -webkit-transform: rotate(45deg) translate(1px, -2px);
+  transform: rotate(45deg) translate(1px 1px);
+}
+.bar4 {
+  -webkit-transform: rotate(-45deg) translate(1px, 1.5px);
+  transform: rotate(-45deg) translate(1px 1px);
+}
+
+.mainbody {
+  align-self: center;
+  width: 45%;
+  margin-left: 150px;
+}
+
+@media (max-width: 1121px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainbody {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 310px;
+    text-align: center;
+  }
+
+  .phone {
+    margin: 0 auto;
+  }
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+<div class="container">
+  <div class="phone">
+  
+      
+      <div class="profile">
+        <div class="notch"></div>
+        
+        <div class="topicon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+        </div>
+        <img class="pic" src="/images/avatar.jpg" alt="avatar"><p class="name">Samuel Green <span class="ava">Available to Walk</span></p>
+        <div class="dots">
+          <div id="dot1"></div>
+          <div id="dot2"></div>
+          <div id="dot3"></div>
+        </div>
+      
+      </div>
+  
+
+    <div class="mainbox2">
+      <div id="chat1"><p>That sounds great. I’d be happy with that.</p></div>
+      <div id="chat2"><p>Could you send over some pictures of your dog, please?</p></div>
+    </div>
+    
+    <div class="mainbox3">
+      <img src="/images/dog-image-1.jpg" alt=""> <img src="/images/dog-image-2.jpg" alt=""> <img src="/images/dog-image-3.jpg" alt="">
+      <div id="chat4"><p>Here are a few pictures. She’s a happy girl!</p></div>
+      <div id="chat5"><p>Can you make it?</p></div>
+    </div>
+    
+    <div class="mainbox4">
+      <div id="chat6"><p>She looks so happy! The time we discussed works. How long shall I take her out for?</p></div>
+      <div id="chat7"><div class="rad"></div><p>30 minute walk <span class="price">$29</span></p></div>
+      <div id="chat8"><div class="rad"></div><p>1 hour walk <span class="pric">$49</span></p></div>
+    </div>
+    
+    <div class="mainbox5"><p>Type a message…</p>
+    <div class="bottomicon">
+      <div class="bar3"></div>
+      <div class="bar4"></div>
+    </div>
+    </div>
+  </div>
+    <div class="mainbody">
+      <h1>Simple booking</h1>
+      <p> Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.</p>
+    </div>
+    
+  
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Asah Syxtus</a>.
+  </div>
+
+</body>
+</html>
