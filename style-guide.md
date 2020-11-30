@@ -11,36 +11,28 @@ The designs were created to the following widths:
 
 ### Primary
 
-#### Text
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
 
-- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
-- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
-- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
-- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
-- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
-- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+### Neutral
 
-#### Gradients
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
 
-These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+Note for text colors:
 
-- Light Magenta: hsl(293, 100%, 63%)
-- Light Violet: hsl(264, 100%, 61%)
-
-### Secondary
-
-- White: hsl(0, 0%, 100%)
-- Light Grayish Violet (app background): hsl(270, 20%, 96%)
-- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
-- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 16px
+- Font size: 13px
 
 ### Font
 
-- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 400, 500, 700
+- Family: [Barlow Semi Condensed]()
+- Weights: 500, 600
